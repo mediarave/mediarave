@@ -23,7 +23,7 @@ define('DB_USER', $_SERVER["DB_USER"]);
 
 
 /** MySQL database password */
-define('DB_PASSWORD', $_SERVER["DB_PASSWORD"]);
+define('DB_PASSWORD', $_SERVER["DB_PASSWORD"] . ':' . $_SERVER["DB_PORT"]);
 
 /** MySQL hostname */
 define('DB_HOST', $_SERVER["DB_HOST"]);
